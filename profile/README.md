@@ -45,3 +45,61 @@ Her repo kendi README’sinde kullanım durumunu belirtir.
 ---
 
 > GulcePacks — düzenli, kontrollü ve sürdürülebilir Minecraft datapack geliştirme alanı.
+
+<details>
+<summary><strong>⚠️ Log Uyarıları ve Hata Bilgilendirmesi</strong></summary>
+
+Bu bölüm, log dosyasında görünen hata ve uyarıların **datapack kaynaklı olmadığını** açıklamak amacıyla eklenmiştir.
+
+---
+
+### ❌ Datapack Kaynaklı Hata Bulunmamaktadır
+
+Log kayıtlarında;
+- Datapack dizinlerine ait (`data/.../function(s)`)
+- `.mcfunction` dosyalarına referans
+- Stacktrace veya çökme raporu
+- Komut sözdizimi (syntax) hatası
+
+**yer almamaktadır.**  
+Bu durum datapack’in sorunsuz çalıştığını göstermektedir.
+
+---
+
+### ⚠️ Teknik Uyarılar (Datapack Dışı)
+
+**Bilinmeyen oyuncu için bilgi güncellemesi yok sayıldı**  
+- İstemci ve sunucu arasındaki senkronizasyon farklarından kaynaklanır  
+- Oyun içi sistemleri veya datapack işleyişini etkilemez
+
+**Profil anahtarı alınamadı / doğrulama yanıtı alınamadı**  
+- Ağ bağlantısı veya kimlik doğrulama süreci ile ilgilidir  
+- Datapack tarafından kontrol edilemez
+
+---
+
+### ℹ️ Oyuncu Kaynaklı Mesajlar
+
+**Bilinmeyen veya eksik komut**  
+**Tanımsız puan tablosu görevi**  
+- Yanlış veya eksik komut kullanımından kaynaklanır  
+- Datapack hatası değildir
+
+**Yetki yok / işlem izni bulunmuyor**  
+- Yetkilendirme sisteminin düzgün çalıştığını gösterir  
+- Hata olarak değerlendirilmez
+
+---
+
+### ✅ Sonuç
+
+Log dosyasında görünen tüm uyarılar;
+- İstemci davranışları
+- Bağlantı ve senkronizasyon süreçleri
+- Oyuncu kaynaklı hatalar
+
+nedeniyle oluşmuştur.
+
+**Datapack tarafında işlevsel veya teknik bir hata tespit edilmemiştir.**
+
+</details>
